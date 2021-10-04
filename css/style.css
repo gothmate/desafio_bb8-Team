@@ -7,6 +7,9 @@
   --darkOrange: #fc4a1a;
   --lightGray: #7c7c7c;
   --buttonOrange: #f97d26;
+  --baseBlue: #5398e9;
+  --baseGreen: #2bbc5d;
+  --basePurple: #be49e8;
   --lightPurple: rgba(190, 73, 232, 0.25);
   --lightBlue: rgba(90, 155, 233, 0.25);
   --lightGreen: rgba(43, 188, 93, 0.25);
@@ -76,7 +79,7 @@ body {
   border-radius: 5px;
   text-decoration: none;
   font-family: 'Roboto Condensed' sans-serif;
-  color: white;
+  color: #fff;
   background: var(--orange);
 }
 #register-opc {
@@ -293,11 +296,22 @@ header ul li a:hover {
   height: 16rem;
   padding: 1rem;
   margin: 1rem;
+  border-radius: 30px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.services ul li p {
+  padding: 1.5rem;
 }
 
 .services {
   margin: 2rem 0;
+}
+
+.block-quote {
+  position: absolute;
+  font-size: 7rem;
+  color: var(--darkOrange);
 }
 
 .blocos h3 {
@@ -328,7 +342,7 @@ header ul li a:hover {
 
 #writing h3 {
   width: fit-content;
-  color: #be49e8;
+  color: var(--basePurple);
 }
 #writing img {
   background: var(--lightPurple);
@@ -338,7 +352,7 @@ header ul li a:hover {
 }
 #gdesign h3 {
   width: fit-content;
-  color: #5398e9;
+  color: var(--baseBlue);
 }
 #gdesign img {
   background: var(--lightBlue);
@@ -349,7 +363,7 @@ header ul li a:hover {
 
 #softdev h3 {
   width: fit-content;
-  color: #2bbc5d;
+  color: var(--baseGreen);
 }
 #softdev img {
   background: var(--lightGreen);
@@ -418,4 +432,20 @@ footer .grid {
   padding: 0 1.5rem;
   font-family: 'Roboto light', sans-serif;
   margin: 0.8rem;
+}
+
+#testimonials h2 {
+  font-family: 'Roboto light', sans-serif;
+  font-size: 3rem;
+  max-width: 50vw;
+  text-align: left;
+  margin: 0 6rem;
+}
+
+#testimonials .agency {
+  color: var(--orange);
+  font-weight: 300;
+}
+
+.services ul li {
 }
