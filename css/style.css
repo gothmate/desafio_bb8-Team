@@ -24,6 +24,72 @@ body {
   text-align: center;
 }
 
+/* Login */
+
+#login {
+  display: grid;
+  z-index: 3;
+
+  position: fixed;
+  top: 5rem;
+  left: 20vw;
+  width: 60vw;
+  height: 80vh;
+
+  margin: auto;
+  border-radius: 10px;
+
+  color: var(--lightGray);
+  background: white;
+
+  background-image: url('./images/bg-1.png');
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+#login .caixa-login img {
+  width: 4rem;
+  height: auto;
+  margin: 3.3rem 0 1rem;
+}
+#login .caixa-login h1 {
+  font-size: 1.3rem;
+}
+
+#login input {
+  height: 1.6rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background: rgb(241, 241, 241);
+}
+
+#login .keepme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+#login-btn {
+  display: inline-block;
+  place-content: center;
+  width: fit-content;
+  padding: 0.5rem 3.5rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto Condensed' sans-serif;
+  color: white;
+  background: var(--orange);
+}
+
+#register {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+/* ---------------------------- */
+
 .arrow {
   display: block;
   position: relative;
@@ -85,14 +151,14 @@ header ul li {
 header ul li a {
   text-decoration: none;
   color: var(--lightGray);
-  transition: 700ms ease-in-out;
+  padding: 5px 25px;
+  transition: 300ms ease-in-out;
 }
 header ul li a:hover {
   background: var(--buttonOrange);
   color: #fff;
-  padding: 5px 25px;
   border-radius: 3px;
-  transition: 700ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 /* Main */
