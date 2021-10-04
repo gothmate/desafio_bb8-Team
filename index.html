@@ -23,7 +23,7 @@
         </div>
         <ul>
           <li><a href="#text-right">Contato</a></li>
-          <li><a href="#"> conta</a></li>
+          <li><a onclick="register()" href="#"> conta</a></li>
           <li><a onclick="login()" href="#">Login</a></li>
         </ul>
       </header>
@@ -53,7 +53,52 @@
         </div>
       </section>
 
-      <section id="login" style="visibility: hidden"></section>
+      <section id="login" style="visibility: hidden">
+        <div class="caixa-login">
+          <img src="./images/Logo.png" alt="logotipo" />
+          <h1>Welcome back</h1>
+
+          <input id="email" type="text" placeholder="e-mail" /><br />
+          <input id="pass" type="password" placeholder="senha" /><br />
+
+          <div class="keepme">
+            <input class="keep" type="checkbox" />
+            <label for="keep">Keep me logged in</label>
+          </div>
+
+          <a id="login-btn" onclick="fecharLogin()">Log in</a>
+          <p>
+            New here?
+            <span><a id="register-opc" onclick="register()">Register</a></span>
+          </p>
+        </div>
+      </section>
+
+      <section id="register" style="visibility: hidden">
+        <div class="caixa-cad">
+          <img src="./images/Logo.png" alt="logotipo" />
+          <h1>Register</h1>
+
+          <input id="name" type="text" placeholder="Name" /><br />
+          <input id="last-name" type="text" placeholder="Last Name" /><br />
+          <input id="email-reg" type="text" placeholder="e-mail" /><br />
+          <input id="password" type="password" placeholder="Password" /><br />
+          <input
+            id="password-retype"
+            type="password"
+            placeholder="Password"
+          /><br />
+
+          <div class="user-terms">
+            <input class="terms" type="checkbox" />
+            <label for="terms"
+              >I read and accept <a href="#">terms of use</a></label
+            >
+          </div>
+
+          <a id="register-btn" onclick="registrar()">Register</a>
+        </div>
+      </section>
 
       <section class="trusted">
         <div class="trusted-p">
@@ -80,7 +125,10 @@
           <ul>
             <li>
               <div id="writing" class="blocos">
-                <h3>Writing</h3>
+                <div class="title1">
+                  <h3>Writing</h3>
+                  <img src="./images/leaf.png" alt="folha" />
+                </div>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
                   iure nisi unde consectetur cum praesentium esse, fugiat, quia
@@ -91,7 +139,10 @@
             </li>
             <li>
               <div id="gdesign" class="blocos">
-                <h3>Graphic Design</h3>
+                <div class="title2">
+                  <h3>Graphic Design</h3>
+                  <img src="./images/design.png" alt="Graphic Design" />
+                </div>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
                   iure nisi unde consectetur cum praesentium esse, fugiat, quia
@@ -102,7 +153,10 @@
             </li>
             <li>
               <div id="softdev" class="blocos">
-                <h3>Software Development</h3>
+                <div class="title3">
+                  <h3>Software Development</h3>
+                  <img src="./images/softdev.png" alt="software design" />
+                </div>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
                   iure nisi unde consectetur cum praesentium esse, fugiat, quia
@@ -165,7 +219,7 @@
           <a href="#cadastro">Register</a>
         </div>
         <div class="logo">
-          <img src="./images/Logo.png" alt="Logotipo" />
+          <img src="./images/logo_simple.png" alt="Logotipo" />
         </div>
         <div id="text-right" class="text-right">
           <h2>Get in touch</h2>

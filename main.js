@@ -1,37 +1,31 @@
-let user = 'teste@gmail.com'
+let user = 'teste@teste.com'
 let passw = '1234'
 
 let userLogged = document.getElementById('email').value
 let userPass = document.getElementById('pass').value
+let loginPage = document.getElementById('login')
+let regPage = document.getElementById('register')
 
 function login() {
-  let loginDiv = `<section id="login" style="visibility: visible">
-  <div class="caixa-login">
-  <img src="./images/Logo.png" alt="logotipo" />
-  <h1>Welcome back</h1>
-  <input id="email" type="text" placeholder="e-mail" /><br />
-  <input id="pass" type="password" placeholder="senha" /><br />
-  <div class="keepme">
-  <input class="keep" type="checkbox" /><label for="keep"
-  >Keep me logged in</label
-  >
-  </div>
-  <a id="login-btn" onclick="fecharLogin()" href="#">Log in</a>
-  <p>
-  New here? <span><a id="register" href="#">Register</a></span>
-  </p>
-  </div>
-  </section>`
-  let loginPage = document.getElementById('login')
-  loginPage.innerHTML = loginDiv
-  console.log(userLogged, userPass)
+  loginPage.style.visibility = 'visible'
+}
+
+function register() {
+  regPage.style.visibility = 'visible'
 }
 
 function fecharLogin() {
-  if (userLogged === user && userPass === passw) {
-    loginDiv = '<section id="login" style="visibility: hidden"></section>'
-    console.log('Logado')
+  console.log(userLogged)
+  console.log(userPass)
+
+  if (userLogged == user && userPass == passw) {
+    loginPage.style.visibility = 'hidden'
   } else {
-    alert('Login e/ou senha incorreto')
+    loginPage.style.visibility = 'hidden'
   }
+}
+
+function registrar() {
+  regPage.style.visibility = 'hidden'
+  loginPage.style.visibility = 'visible'
 }

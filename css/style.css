@@ -7,6 +7,9 @@
   --darkOrange: #fc4a1a;
   --lightGray: #7c7c7c;
   --buttonOrange: #f97d26;
+  --lightPurple: rgba(190, 73, 232, 0.25);
+  --lightBlue: rgba(90, 155, 233, 0.25);
+  --lightGreen: rgba(43, 188, 93, 0.25);
 
   scroll-behavior: smooth;
 }
@@ -26,23 +29,20 @@ body {
 
 /* Login */
 
-#login {
+#login,
+#register {
   display: grid;
-  z-index: 3;
-
   position: fixed;
+  background: white;
+  background-image: url('../images/BG-1.png');
   top: 5rem;
   left: 20vw;
   width: 60vw;
   height: 80vh;
-
   margin: auto;
   border-radius: 10px;
-
   color: var(--lightGray);
-  background: white;
-
-  background-image: url('./images/bg-1.png');
+  z-index: 3;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -54,7 +54,6 @@ body {
 #login .caixa-login h1 {
   font-size: 1.3rem;
 }
-
 #login input {
   height: 1.6rem;
   margin: 0.5rem;
@@ -62,14 +61,12 @@ body {
   border: none;
   background: rgb(241, 241, 241);
 }
-
 #login .keepme {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
 }
-
 #login-btn {
   display: inline-block;
   place-content: center;
@@ -81,6 +78,45 @@ body {
   font-family: 'Roboto Condensed' sans-serif;
   color: white;
   background: var(--orange);
+}
+#register-opc {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+#register .caixa-cad img {
+  width: 4rem;
+  height: auto;
+  margin: 3.3rem 0 1rem;
+}
+#register .caixa-cad h1 {
+  font-size: 1.3rem;
+}
+#register input {
+  height: 1.6rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background: rgb(241, 241, 241);
+}
+#register .user-terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+#register-btn {
+  display: inline-block;
+  place-content: center;
+  width: fit-content;
+  padding: 0.5rem 3.5rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto Condensed' sans-serif;
+  color: white;
+  background: var(--orange);
+  cursor: pointer;
 }
 
 #register {
@@ -273,14 +309,53 @@ header ul li a:hover {
   text-align: left;
   font-size: 1.1rem;
 }
+
+#writing .title1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#gdesign .title2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#softdev .title3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #writing h3 {
+  width: fit-content;
   color: #be49e8;
 }
+#writing img {
+  background: var(--lightPurple);
+  border-radius: 25%;
+  width: 50.2px;
+  height: auto;
+}
 #gdesign h3 {
+  width: fit-content;
   color: #5398e9;
 }
+#gdesign img {
+  background: var(--lightBlue);
+  border-radius: 25%;
+  width: 50.2px;
+  height: auto;
+}
+
 #softdev h3 {
+  width: fit-content;
   color: #2bbc5d;
+}
+#softdev img {
+  background: var(--lightGreen);
+  border-radius: 25%;
+  width: 50.2px;
+  height: auto;
 }
 
 footer {
@@ -324,6 +399,8 @@ footer .grid {
   height: 235px;
   width: auto;
   margin: 0 4rem;
+  padding: 0 6rem;
+  margin: 0 6rem;
 }
 
 .grid .text-right {
