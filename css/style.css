@@ -29,7 +29,7 @@ body {
 }
 
 .title h1 {
-  font-size: 160px;
+  font-size: 10rem;
 }
 .container .first h3 {
   font-size: 80px;
@@ -49,7 +49,7 @@ body {
   display: block;
   margin: 75px 10vw;
   width: 80vw;
-  height: 208rem;
+  height: 2000px;
   background-color: #fff;
   text-align: center;
 }
@@ -76,13 +76,13 @@ body {
 .arrow #arrow_down {
   cursor: pointer;
   top: 0;
-  left: 32.7rem;
+  left: 48.3vw;
   transition: 500ms ease-in-out;
 }
 .arrow #arrow_down:hover {
   position: absolute;
   top: 0.3rem;
-  left: 32.7rem;
+  left: 48.3vw;
   transition: 500ms ease-in-out;
 }
 
@@ -219,4 +219,101 @@ header ul li a:hover {
 
 .more .agency h2 {
   color: var(--orange);
+}
+
+.services ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.services ul li {
+  list-style: none;
+  width: 16rem;
+  height: 16rem;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.services {
+  margin: 2rem 0;
+}
+
+.blocos h3 {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.blocos p {
+  color: var(--lightGray);
+  text-align: left;
+  font-size: 1.1rem;
+}
+#writing h3 {
+  color: #be49e8;
+}
+#gdesign h3 {
+  color: #5398e9;
+}
+#softdev h3 {
+  color: #2bbc5d;
+}
+
+footer {
+  display: flex;
+
+  background: var(--orange);
+  height: 23.8rem;
+}
+
+footer .grid {
+  margin: 71px;
+  display: flex;
+  width: 100vw;
+  place-content: center;
+}
+
+.grid .text-left {
+  place-content: left;
+  width: 33%;
+}
+.grid .text-left h2 {
+  font-size: 2.5rem;
+}
+.grid .text-left h3 {
+  font-size: 1.5rem;
+  font-family: 'Roboto light', sans-serif;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+.grid .text-left a {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Roboto light', sans-serif;
+  font-weight: 300;
+}
+
+.grid .logo img {
+  height: 235px;
+  width: auto;
+  margin: 0 4rem;
+}
+
+.grid .text-right {
+  width: 30%;
+}
+.grid .text-right img {
+  position: absolute;
+  right: 24rem;
+}
+.grid .text-right h2 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.grid .text-right p {
+  padding: 0 1.5rem;
+  font-family: 'Roboto light', sans-serif;
+  margin: 0.8rem;
 }
