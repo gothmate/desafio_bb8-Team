@@ -76,13 +76,13 @@ body {
 .arrow #arrow_down {
   cursor: pointer;
   top: 0;
-  left: 32.7rem;
+  left: 48.3vw;
   transition: 500ms ease-in-out;
 }
 .arrow #arrow_down:hover {
   position: absolute;
   top: 0.3rem;
-  left: 32.7rem;
+  left: 48.3vw;
   transition: 500ms ease-in-out;
 }
 
