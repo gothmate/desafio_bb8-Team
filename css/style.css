@@ -7,6 +7,8 @@
   --darkOrange: #fc4a1a;
   --lightGray: #7c7c7c;
   --buttonOrange: #f97d26;
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,6 +45,10 @@ body {
 
 header {
   display: flex;
+  width: 100vw;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  background: white;
   color: var(--orange);
   font-size: 1rem;
   padding: 24px;
@@ -215,7 +221,7 @@ footer {
   display: flex;
 
   background: var(--orange);
-  height: 23.8rem;
+  height: 23rem;
 }
 
 footer .grid {
