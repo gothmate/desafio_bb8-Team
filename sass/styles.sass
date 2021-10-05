@@ -60,7 +60,7 @@ body
     margin: 0.5rem
     border-radius: 5px
     border: none
-    background: rgb(241, 241, 241)
+    background: variables.$baseIce
 
   .keepme
     display: flex
@@ -77,7 +77,7 @@ body
   border-radius: 5px
   text-decoration: none
   font-family: 'Roboto Condensed' sans-serif
-  color: #fff
+  color: variables.$baseIce
   background: variables.$orange
 
 #register-opc
@@ -101,7 +101,7 @@ body
     margin: 0.5rem
     border-radius: 5px
     border: none
-    background: rgb(241, 241, 241)
+    background: variables.$baseIce
 
   .user-terms
     display: flex
@@ -182,7 +182,7 @@ header
 
       & a:hover
         background: variables.$buttonOrange
-        color: #fff
+        color: variables.$baseIce
         border-radius: 3px
 
 /* Main */
@@ -222,7 +222,7 @@ header
       text-align: center
 
     a:hover
-      color: #fff
+      color: variables.$baseIce
       background: variables.$darkOrange
       border-radius: 3px
       padding: 0.5rem 0.5rem
@@ -269,7 +269,7 @@ header
     display: flex
     justify-content: space-evenly
 
-    & li
+    li
       list-style: none
       width: 16rem
       height: 16rem
@@ -279,7 +279,7 @@ header
       box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3)
 
       p
-        padding: 1.5rem
+        padding: 0.3rem 1rem
 
 .blocos
   h3
@@ -289,7 +289,7 @@ header
   p
     color: variables.$lightGray
     text-align: left
-    font-size: 1.1rem
+    font-size: 1rem
 
 #writing .title1
   display: flex
@@ -339,16 +339,16 @@ header
     place-content: left
     width: 33%
 
-    & h2
+    h2
       font-size: 2.5rem
 
-      & h3
+      h3
         font-size: 1.5rem
         font-family: 'Roboto light', sans-serif
         font-weight: 300
         padding: 0.5rem 0
 
-      & a
+      a
         display: block
         padding: 0.5rem 0
         text-decoration: none
