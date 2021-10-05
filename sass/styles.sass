@@ -1,0 +1,427 @@
+@use 'variables'
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  scroll-behavior: smooth
+
+body
+  font-family: 'Roboto Condensed', sans-serif
+  color: #fff
+
+  a
+    text-decoration: none
+    padding: 0 0.5rem
+    transition: 300ms ease-in-out
+
+  & a:hover
+    background: variables.$buttonOrange
+    color: #fff
+    border-radius: 3px
+    transition: 300ms ease-in-out
+
+.conteudo
+  display: block
+  width: 100vw
+  height: fit-content
+  background-color: #fff
+  text-align: center
+
+/* Login */
+
+#login,
+#register
+  display: grid
+  position: fixed
+  background: white
+  background-image: url('../images/BG-1.png')
+  top: 5rem
+  left: 20vw
+  width: 60vw
+  height: 80vh
+  margin: auto
+  border-radius: 10px
+  color: variables.$lightGray
+  z-index: 3
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4)
+
+  .caixa-login
+    img
+      width: 4rem
+      height: auto
+      margin: 3.3rem 0 1rem
+
+    h1
+      font-size: 1.3rem
+
+  input
+    height: 1.6rem
+    margin: 0.5rem
+    border-radius: 5px
+    border: none
+    background: rgb(241, 241, 241)
+
+  .keepme
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0
+
+#login-btn
+  display: inline-block
+  place-content: center
+  width: fit-content
+  padding: 0.5rem 3.5rem
+  font-size: 1.4rem
+  border-radius: 5px
+  text-decoration: none
+  font-family: 'Roboto Condensed' sans-serif
+  color: #fff
+  background: variables.$orange
+
+#register-opc
+  color: variables.$orange
+  cursor: pointer
+
+#register
+  color: variables.$orange
+  text-decoration: none
+
+  .caixa-cad img
+    width: 4rem
+    height: auto
+    margin: 3.3rem 0 1rem
+
+  .caixa-cad h1
+    font-size: 1.3rem
+
+  input
+    height: 1.6rem
+    margin: 0.5rem
+    border-radius: 5px
+    border: none
+    background: rgb(241, 241, 241)
+
+  .user-terms
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0
+
+#register-btn
+  display: inline-block
+  place-content: center
+  width: fit-content
+  padding: 0.5rem 3.5rem
+  font-size: 1.4rem
+  border-radius: 5px
+  text-decoration: none
+  font-family: 'Roboto Condensed' sans-serif
+  color: white
+  background: variables.$orange
+  cursor: pointer
+
+/* ---------------------------- */
+
+.arrow
+  display: block
+  position: relative
+
+  & #arrow_down
+    cursor: pointer
+    top: 0
+    left: 48.3vw
+    transition: 500ms ease-in-out
+
+  & #arrow_down:hover
+    position: absolute
+    top: 0.3rem
+    left: 48.3vw
+    transition: 500ms ease-in-out
+
+/* HEADER */
+
+#logo
+  display: flex
+  margin-left: 90px
+  align-items: center
+
+header
+  display: flex
+  width: 100vw
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2)
+  position: fixed
+  background: white
+  color: variables.$orange
+  font-size: 1rem
+  padding: 24px
+  align-items: flex-start
+  justify-content: space-between
+
+  i img
+    padding: 0 5px
+    width: 2rem
+    height: 2rem
+    border-radius: 50%
+
+  h2
+    font-size: 2rem
+
+  ul
+    display: flex
+    list-style: none
+    margin-right: 90px
+
+    li
+      padding: 10px 25px
+
+      a
+        color: variables.$lightGray
+        padding: 5px 25px
+
+      & a:hover
+        background: variables.$buttonOrange
+        color: #fff
+        border-radius: 3px
+
+/* Main */
+
+.quality
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 68rem
+  height: 765px
+  padding: 0 3.6rem
+
+  .section
+    display: grid
+    color: variables.$lightGray
+    font-family: 'Roboto light', sans-serif
+    font-weight: 300
+    font-size: 1.8rem
+    width: 17em
+
+    h2
+      font-size: 5.6rem
+      text-align: left
+      margin: 2rem 0
+      padding-right: 1rem
+
+    p
+      text-align: left
+      margin: 2rem 0
+      padding-right: 1rem
+
+    a
+      margin: 3rem 0
+      color: variables.$darkOrange
+      font-family: 'Roboto Condensed', sans-serif
+      margin-right: 15rem
+      text-align: center
+
+    a:hover
+      color: #fff
+      background: variables.$darkOrange
+      border-radius: 3px
+      padding: 0.5rem 0.5rem
+
+.imagem img
+  width: 450px
+  height: auto
+  padding-left: 1rem
+
+/* Trusted */
+
+.trusted
+  display: block
+  color: variables.$darkGray
+  margin: 4.5rem auto
+
+  &-p
+    align-items: center
+    justify-content: center
+
+  & h2
+    font-family: 'Roboto Condensed', sans-serif
+    font-size: 3.75rem
+
+  & p
+    display: inline-block
+    max-width: 45vw
+    font-weight: 300rem
+    margin-top: 1.5rem
+
+  &-logos
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+
+.more .agency h2
+  color: variables.$orange
+
+/** Services **/
+
+.services
+  margin: 2rem 0
+  ul
+    display: flex
+    justify-content: space-evenly
+
+    & li
+      list-style: none
+      width: 16rem
+      height: 16rem
+      padding: 1rem
+      margin: 1rem
+      border-radius: 30px
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3)
+
+      p
+        padding: 1.5rem
+
+.blocos
+  h3
+    text-align: left
+    font-size: 1.5rem
+
+  p
+    color: variables.$lightGray
+    text-align: left
+    font-size: 1.1rem
+
+#writing .title1
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  h3
+    width: fit-content
+    color: variables.$basePurple
+
+  img
+    background: variables.$lightPurple
+    border-radius: 25%
+    width: 50.2px
+    height: auto
+
+#gdesign .title2
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  h3
+    width: fit-content
+    color: variables.$baseBlue
+
+  img
+    background: variables.$lightBlue
+    border-radius: 25%
+    width: 50.2px
+    height: auto
+
+#softdev .title3
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  h3
+    width: fit-content
+    color: variables.$baseGreen
+
+  img
+    background: variables.$lightGreen
+    border-radius: 25%
+    width: 50.2px
+    height: auto
+
+    place-content: left
+    width: 33%
+
+    & h2
+      font-size: 2.5rem
+
+      & h3
+        font-size: 1.5rem
+        font-family: 'Roboto light', sans-serif
+        font-weight: 300
+        padding: 0.5rem 0
+
+      & a
+        display: block
+        padding: 0.5rem 0
+        text-decoration: none
+        color: white
+        font-size: 1.2rem
+        font-family: 'Roboto light', sans-serif
+        font-weight: 300
+
+#testimonials
+  h2
+    font-family: 'Roboto light', sans-serif
+    font-size: 3rem
+    max-width: 50vw
+    text-align: left
+    margin: 0 6rem
+
+  .agency
+    color: variables.$orange
+    font-weight: 300
+
+footer
+  display: flex
+
+  background: variables.$orange
+  height: 23rem
+
+  .grid
+    margin: 71px
+    display: flex
+    width: 100vw
+    place-content: center
+
+    .logo img
+      height: 235px
+      width: auto
+      margin: 0 4rem
+      padding: 0 6rem
+      margin: 0 6rem
+
+    .text-right
+      width: 30%
+
+      & img
+        position: absolute
+        right: 24rem
+
+      & h2
+        font-size: 2rem
+        margin: 1rem
+
+      & p
+        padding: 0 1.5rem
+        font-family: 'Roboto light', sans-serif
+        margin: 0.8rem
+
+    .text-left
+      place-content: left
+      width: 33%
+
+      h2
+        font-size: 2.5rem
+
+      h3
+        font-size: 1.5rem
+        font-family: 'Roboto light', sans-serif
+        font-weight: 300
+        padding: 0.5rem 0
+
+      a
+        display: block
+        padding: 0.5rem 0
+        text-decoration: none
+        color: white
+        font-size: 1.2rem
+        font-family: 'Roboto light', sans-serif
+        font-weight: 300
