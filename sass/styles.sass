@@ -3,12 +3,23 @@
 *
   margin: 0
   padding: 0
-
+  box-sizing: border-box
   scroll-behavior: smooth
 
 body
   font-family: 'Roboto Condensed', sans-serif
   color: #fff
+
+  a
+    text-decoration: none
+    padding: 0 0.5rem
+    transition: 300ms ease-in-out
+
+  & a:hover
+    background: variables.$buttonOrange
+    color: #fff
+    border-radius: 3px
+    transition: 300ms ease-in-out
 
 .conteudo
   display: block
@@ -166,16 +177,13 @@ header
       padding: 10px 25px
 
       a
-        text-decoration: none
         color: variables.$lightGray
         padding: 5px 25px
-        transition: 300ms ease-in-out
 
       & a:hover
         background: variables.$buttonOrange
         color: #fff
         border-radius: 3px
-        transition: 300ms ease-in-out
 
 /* Main */
 
@@ -187,7 +195,7 @@ header
   height: 765px
   padding: 0 3.6rem
 
-  & .section
+  .section
     display: grid
     color: variables.$lightGray
     font-family: 'Roboto light', sans-serif
@@ -195,32 +203,29 @@ header
     font-size: 1.8rem
     width: 17em
 
-  & .section h2
-    font-size: 5.6rem
-    text-align: left
-    margin: 2rem 0
-    padding-right: 1rem
+    h2
+      font-size: 5.6rem
+      text-align: left
+      margin: 2rem 0
+      padding-right: 1rem
 
-  & .section p
-    text-align: left
-    margin: 2rem 0
-    padding-right: 1rem
+    p
+      text-align: left
+      margin: 2rem 0
+      padding-right: 1rem
 
-  & .section a
-    margin: 3rem 0
-    color: variables.$darkOrange
-    text-decoration: none
-    font-family: 'Roboto Condensed', sans-serif
-    margin-right: 15rem
-    text-align: center
-    transition: 500ms ease
+    a
+      margin: 3rem 0
+      color: variables.$darkOrange
+      font-family: 'Roboto Condensed', sans-serif
+      margin-right: 15rem
+      text-align: center
 
-  & .section a:hover
-    color: #fff
-    background: variables.$darkOrange
-    border-radius: 3px
-    padding: 0.5rem 0.5rem
-    transition: 500ms ease
+    a:hover
+      color: #fff
+      background: variables.$darkOrange
+      border-radius: 3px
+      padding: 0.5rem 0.5rem
 
 .imagem img
   width: 450px

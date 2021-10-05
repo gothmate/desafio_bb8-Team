@@ -1,12 +1,24 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
   color: #fff;
+}
+body a {
+  text-decoration: none;
+  padding: 0 0.5rem;
+  transition: 300ms ease-in-out;
+}
+body a:hover {
+  background: #f97d26;
+  color: #fff;
+  border-radius: 3px;
+  transition: 300ms ease-in-out;
 }
 
 .conteudo {
@@ -173,16 +185,13 @@ header ul li {
   padding: 10px 25px;
 }
 header ul li a {
-  text-decoration: none;
   color: #7c7c7c;
   padding: 5px 25px;
-  transition: 300ms ease-in-out;
 }
 header ul li a:hover {
   background: #f97d26;
   color: #fff;
   border-radius: 3px;
-  transition: 300ms ease-in-out;
 }
 
 /* Main */
@@ -216,18 +225,15 @@ header ul li a:hover {
 .quality .section a {
   margin: 3rem 0;
   color: #fc4a1a;
-  text-decoration: none;
   font-family: "Roboto Condensed", sans-serif;
   margin-right: 15rem;
   text-align: center;
-  transition: 500ms ease;
 }
 .quality .section a:hover {
   color: #fff;
   background: #fc4a1a;
   border-radius: 3px;
   padding: 0.5rem 0.5rem;
-  transition: 500ms ease;
 }
 
 .imagem img {
