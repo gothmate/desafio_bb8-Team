@@ -1,24 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-
-  --orange: #f7b633;
-  --darkGray: #3b3b3b;
-  --darkOrange: #fc4a1a;
-  --lightGray: #7c7c7c;
-  --buttonOrange: #f97d26;
-  --baseBlue: #5398e9;
-  --baseGreen: #2bbc5d;
-  --basePurple: #be49e8;
-  --lightPurple: rgba(190, 73, 232, 0.25);
-  --lightBlue: rgba(90, 155, 233, 0.25);
-  --lightGreen: rgba(43, 188, 93, 0.25);
-
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: #fff;
 }
 
@@ -31,45 +18,48 @@ body {
 }
 
 /* Login */
-
 #login,
 #register {
   display: grid;
   position: fixed;
   background: white;
-  background-image: url('../images/BG-1.png');
+  background-image: url("../images/BG-1.png");
   top: 5rem;
   left: 20vw;
   width: 60vw;
   height: 80vh;
   margin: auto;
   border-radius: 10px;
-  color: var(--lightGray);
+  color: #7c7c7c;
   z-index: 3;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
-
-#login .caixa-login img {
+#login .caixa-login img,
+#register .caixa-login img {
   width: 4rem;
   height: auto;
   margin: 3.3rem 0 1rem;
 }
-#login .caixa-login h1 {
+#login .caixa-login h1,
+#register .caixa-login h1 {
   font-size: 1.3rem;
 }
-#login input {
+#login input,
+#register input {
   height: 1.6rem;
   margin: 0.5rem;
   border-radius: 5px;
   border: none;
-  background: rgb(241, 241, 241);
+  background: #f1f1f1;
 }
-#login .keepme {
+#login .keepme,
+#register .keepme {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
 }
+
 #login-btn {
   display: inline-block;
   place-content: center;
@@ -78,15 +68,20 @@ body {
   font-size: 1.4rem;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'Roboto Condensed' sans-serif;
+  font-family: "Roboto Condensed" sans-serif;
   color: #fff;
-  background: var(--orange);
+  background: #f7b633;
 }
+
 #register-opc {
-  color: var(--orange);
+  color: #f7b633;
   cursor: pointer;
 }
 
+#register {
+  color: #f7b633;
+  text-decoration: none;
+}
 #register .caixa-cad img {
   width: 4rem;
   height: auto;
@@ -100,7 +95,7 @@ body {
   margin: 0.5rem;
   border-radius: 5px;
   border: none;
-  background: rgb(241, 241, 241);
+  background: #f1f1f1;
 }
 #register .user-terms {
   display: flex;
@@ -108,6 +103,7 @@ body {
   justify-content: center;
   margin: 0;
 }
+
 #register-btn {
   display: inline-block;
   place-content: center;
@@ -116,19 +112,13 @@ body {
   font-size: 1.4rem;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'Roboto Condensed' sans-serif;
+  font-family: "Roboto Condensed" sans-serif;
   color: white;
-  background: var(--orange);
+  background: #f7b633;
   cursor: pointer;
 }
 
-#register {
-  color: var(--orange);
-  text-decoration: none;
-}
-
 /* ---------------------------- */
-
 .arrow {
   display: block;
   position: relative;
@@ -147,6 +137,11 @@ body {
 }
 
 /* HEADER */
+#logo {
+  display: flex;
+  margin-left: 90px;
+  align-items: center;
+}
 
 header {
   display: flex;
@@ -154,54 +149,43 @@ header {
   box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
   position: fixed;
   background: white;
-  color: var(--orange);
+  color: #f7b633;
   font-size: 1rem;
   padding: 24px;
   align-items: flex-start;
   justify-content: space-between;
 }
-
-#logo {
-  display: flex;
-  margin-left: 90px;
-  align-items: center;
-}
-
 header i img {
   padding: 0 5px;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
 }
-
 header h2 {
   font-size: 2rem;
 }
-
 header ul {
   display: flex;
   list-style: none;
   margin-right: 90px;
 }
-
 header ul li {
   padding: 10px 25px;
 }
 header ul li a {
   text-decoration: none;
-  color: var(--lightGray);
+  color: #7c7c7c;
   padding: 5px 25px;
   transition: 300ms ease-in-out;
 }
 header ul li a:hover {
-  background: var(--buttonOrange);
+  background: #f97d26;
   color: #fff;
   border-radius: 3px;
   transition: 300ms ease-in-out;
 }
 
 /* Main */
-
 .quality {
   display: flex;
   align-items: center;
@@ -210,11 +194,10 @@ header ul li a:hover {
   height: 765px;
   padding: 0 3.6rem;
 }
-
 .quality .section {
   display: grid;
-  color: var(--lightGray);
-  font-family: 'Roboto light', sans-serif;
+  color: #7c7c7c;
+  font-family: "Roboto light", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   width: 17em;
@@ -232,16 +215,16 @@ header ul li a:hover {
 }
 .quality .section a {
   margin: 3rem 0;
-  color: var(--darkOrange);
+  color: #fc4a1a;
   text-decoration: none;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   margin-right: 15rem;
   text-align: center;
   transition: 500ms ease;
 }
 .quality .section a:hover {
   color: #fff;
-  background: var(--darkOrange);
+  background: #fc4a1a;
   border-radius: 3px;
   padding: 0.5rem 0.5rem;
   transition: 500ms ease;
@@ -254,10 +237,9 @@ header ul li a:hover {
 }
 
 /* Trusted */
-
 .trusted {
   display: block;
-  color: var(--darkGray);
+  color: #3b3b3b;
   margin: 4.5rem auto;
 }
 .trusted-p {
@@ -265,7 +247,7 @@ header ul li a:hover {
   justify-content: center;
 }
 .trusted h2 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 3.75rem;
 }
 .trusted p {
@@ -274,7 +256,6 @@ header ul li a:hover {
   font-weight: 300rem;
   margin-top: 1.5rem;
 }
-
 .trusted-logos {
   display: flex;
   align-items: center;
@@ -282,14 +263,17 @@ header ul li a:hover {
 }
 
 .more .agency h2 {
-  color: var(--orange);
+  color: #f7b633;
 }
 
+/** Services **/
+.services {
+  margin: 2rem 0;
+}
 .services ul {
   display: flex;
   justify-content: space-evenly;
 }
-
 .services ul li {
   list-style: none;
   width: 16rem;
@@ -299,19 +283,8 @@ header ul li a:hover {
   border-radius: 30px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
-
 .services ul li p {
   padding: 1.5rem;
-}
-
-.services {
-  margin: 2rem 0;
-}
-
-.block-quote {
-  position: absolute;
-  font-size: 7rem;
-  color: var(--darkOrange);
 }
 
 .blocos h3 {
@@ -319,7 +292,7 @@ header ul li a:hover {
   font-size: 1.5rem;
 }
 .blocos p {
-  color: var(--lightGray);
+  color: #7c7c7c;
   text-align: left;
   font-size: 1.1rem;
 }
@@ -329,120 +302,136 @@ header ul li a:hover {
   align-items: center;
   justify-content: space-between;
 }
+#writing .title1 h3 {
+  width: fit-content;
+  color: #be49e8;
+}
+#writing .title1 img {
+  background: rgba(190, 73, 232, 0.25);
+  border-radius: 25%;
+  width: 50.2px;
+  height: auto;
+}
+
 #gdesign .title2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+#gdesign .title2 h3 {
+  width: fit-content;
+  color: #5398e9;
+}
+#gdesign .title2 img {
+  background: rgba(90, 155, 233, 0.25);
+  border-radius: 25%;
+  width: 50.2px;
+  height: auto;
+}
+
 #softdev .title3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+#softdev .title3 h3 {
+  width: fit-content;
+  color: #2bbc5d;
+}
+#softdev .title3 img {
+  background: rgba(43, 188, 93, 0.25);
+  border-radius: 25%;
+  width: 50.2px;
+  height: auto;
+  place-content: left;
+  width: 33%;
+}
+#softdev .title3 img h2 {
+  font-size: 2.5rem;
+}
+#softdev .title3 img h2 h3 {
+  font-size: 1.5rem;
+  font-family: "Roboto light", sans-serif;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+#softdev .title3 img h2 a {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Roboto light", sans-serif;
+  font-weight: 300;
+}
 
-#writing h3 {
-  width: fit-content;
-  color: var(--basePurple);
+#testimonials h2 {
+  font-family: "Roboto light", sans-serif;
+  font-size: 3rem;
+  max-width: 50vw;
+  text-align: left;
+  margin: 0 6rem;
 }
-#writing img {
-  background: var(--lightPurple);
-  border-radius: 25%;
-  width: 50.2px;
-  height: auto;
-}
-#gdesign h3 {
-  width: fit-content;
-  color: var(--baseBlue);
-}
-#gdesign img {
-  background: var(--lightBlue);
-  border-radius: 25%;
-  width: 50.2px;
-  height: auto;
-}
-
-#softdev h3 {
-  width: fit-content;
-  color: var(--baseGreen);
-}
-#softdev img {
-  background: var(--lightGreen);
-  border-radius: 25%;
-  width: 50.2px;
-  height: auto;
+#testimonials .agency {
+  color: #f7b633;
+  font-weight: 300;
 }
 
 footer {
   display: flex;
-
-  background: var(--orange);
+  background: #f7b633;
   height: 23rem;
 }
-
 footer .grid {
   margin: 71px;
   display: flex;
   width: 100vw;
   place-content: center;
 }
-
-.grid .text-left {
-  place-content: left;
-  width: 33%;
-}
-.grid .text-left h2 {
-  font-size: 2.5rem;
-}
-.grid .text-left h3 {
-  font-size: 1.5rem;
-  font-family: 'Roboto light', sans-serif;
-  font-weight: 300;
-  padding: 0.5rem 0;
-}
-.grid .text-left a {
-  display: block;
-  padding: 0.5rem 0;
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-  font-family: 'Roboto light', sans-serif;
-  font-weight: 300;
-}
-
-.grid .logo img {
+footer .grid .logo img {
   height: 235px;
   width: auto;
   margin: 0 4rem;
   padding: 0 6rem;
   margin: 0 6rem;
 }
-
-.grid .text-right {
+footer .grid .text-right {
   width: 30%;
 }
-.grid .text-right img {
+footer .grid .text-right img {
   position: absolute;
   right: 24rem;
 }
-.grid .text-right h2 {
+footer .grid .text-right h2 {
   font-size: 2rem;
   margin: 1rem;
 }
-.grid .text-right p {
+footer .grid .text-right p {
   padding: 0 1.5rem;
-  font-family: 'Roboto light', sans-serif;
+  font-family: "Roboto light", sans-serif;
   margin: 0.8rem;
 }
-
-#testimonials h2 {
-  font-family: 'Roboto light', sans-serif;
-  font-size: 3rem;
-  max-width: 50vw;
-  text-align: left;
-  margin: 0 6rem;
+footer .grid .text-left {
+  place-content: left;
+  width: 33%;
 }
-
-#testimonials .agency {
-  color: var(--orange);
+footer .grid .text-left h2 {
+  font-size: 2.5rem;
+}
+footer .grid .text-left h3 {
+  font-size: 1.5rem;
+  font-family: "Roboto light", sans-serif;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+footer .grid .text-left a {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Roboto light", sans-serif;
   font-weight: 300;
 }
+
+/*# sourceMappingURL=styles.css.map */
